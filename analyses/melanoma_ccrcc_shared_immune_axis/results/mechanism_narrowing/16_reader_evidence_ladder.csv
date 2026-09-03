@@ -1,0 +1,15 @@
+evidence_order,evidence_level,melanoma_text,ccrcc_text,conclusion_text,melanoma_status,ccrcc_status,conclusion_status
+1,Exact-set ranked-list GSEA,"4/4 positive
+all BH q < 0.05","4/4 positive
+all BH q < 0.05","SHARED
+CO-ENRICHMENT",shared,shared,shared
+2,Gene-disjoint node group effects,"4/4 positive
+all BH q < 0.002","0/4 significant
+all q = 0.947",NOT REPLICATED,shared,not_supported,not_supported
+3,Noncanonical branch-IFNG association,"beta 0.176
+q 0.054","beta 0.363
+q 2.3e-04","Direction-consistent
+exploratory association",partial,shared,partial
+4,Full exposure-linked forward serial model,95% CI excludes 0,95% CI crosses 0,NOT REPLICATED,partial,not_supported,not_supported
+5,NFKB2/RELB TF activation,Not concordant,Not significant,"COMMON TF ACTIVATION
+NOT SUPPORTED",not_supported,not_supported,not_supported

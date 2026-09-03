@@ -1,0 +1,5 @@
+source,source_file,md5,rows,MSigDB_version
+ccRCC combined GSEA,GSEA_Hallmark_Reactome_GOBP_adjusted_High_vs_Low.csv,bf95a3cb371c3169d54633e0e52a3e53,4937,2026.1.Hs
+TIGER Hallmark,05_fgsea_Hallmark_adjusted_High_vs_Low.csv,e62f391b8c052e8ff3a53452973b19bc,50,2026.1.Hs
+TIGER Reactome,01_fgsea_Reactome_adjusted_High_vs_Low.csv,368fae6f58edb25a2cb95fd7ff9c7a85,1035,2026.1.Hs
+TIGER GO:BP,06_fgsea_GO_BP_adjusted_High_vs_Low.csv,a051106d6e6d4caba0a7a984b3ccf527,3630,2026.1.Hs

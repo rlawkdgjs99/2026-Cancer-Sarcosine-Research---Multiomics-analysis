@@ -1,0 +1,5 @@
+collection,exact_sets_compared,target_direction_aligned,both_BH_q_lt_0_05,strict_target_common
+GO:BP,3572,864,86,36
+Hallmark,50,18,17,9
+Reactome,1027,198,118,17
+All collections,4649,1080,221,62

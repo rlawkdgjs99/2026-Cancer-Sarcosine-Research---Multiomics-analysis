@@ -1,54 +1,49 @@
-# Analysis code — sarcosine, the gut microbiome, and cancer immunotherapy
+# Sarcosine–cancer multi-omics analyses
 
-Custom analysis code for the public-data analyses in the manuscript
-**"[MANUSCRIPT TITLE — to be filled in]"** (authors, year).
+This repository contains analysis code and selected machine-readable result tables for the public-cohort components of a study of sarcosine metabolism, tumor immunity, and cancer-associated microbiomes.
 
-This repository contains the R scripts that reproduce the public-data figures
-(Figure 1–3 and Supplementary Figures 1–15). Each top-level folder corresponds
-to one analysis and to the manuscript figure(s) it produces.
+The repository is organized by **cohort and analysis**, not by manuscript panel number. This keeps the code stable when the manuscript layout changes.
 
-> **Raw data are not included here.** They are public and must be obtained from
-> the accessions listed below. Each folder's `README.md` documents its inputs and
-> run order. Set the R working directory to the relevant analysis folder before
-> running; all paths in the scripts are relative to it.
+## Central result adopted for the manuscript
 
-## Repository structure
+Two independent bulk-tumor cohorts were used for discovery:
 
-| Folder                                | Manuscript figure(s)                                                                                        | Data source (accession)                                                                       |
-| ------------------------------------- | ----------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
-| `Fig1b_MTBLS10232_faecal_metabolome/` | Figure 1b — faecal sarcosine elevated in CRC                                                                | MetaboLights **MTBLS10232**                                                                   |
-| `Fig1c_Hakimi_ccRCC/`                 | Figure 1c — tumour-tissue sarcosine elevated in ccRCC                                                       | Hakimi et al. _Cancer Cell_ 2016 supplementary table; GEO **GSE74734**                        |
-| `Fig1dg_TIGER_melanoma/`              | Figure 1d–g + Supplementary Figure 1b–d — host sarcosine-metabolic gene expression vs ICI response/survival | RNA-seq cohort **PRJEB23709** (TIGER portal, http://tiger.canceromics.org)                    |
-| `Fig2_CRC_WGS/`                       | Figure 2 + CRC Supplementary Figures — gut-microbial sarcosine-degradation capacity in CRC                  | WGS BioProjects **PRJEB6070, PRJEB10878, PRJEB27928, PRJNA429097** (via the HGMT database)    |
-| `Fig3_NSCLC_WGS/`                     | Figure 3 + NSCLC Supplementary Figures — sarcosine-degrading gut microbiome marks ICI response in NSCLC     | WGS BioProjects **PRJNA751792, PRJNA1023797, PRJEB22863, PRJEB26531** (via the HGMT database) |
-| `SupFig13_NSCLC_16S/`                 | Supplementary Figure 13 — independent 16S corroboration (NSCLC)                                             | 16S BioProject **PRJEB26531** (via the HGMT database)                                         |
-| `SupFig14-15_Liang_multiomics/`       | Supplementary Figures 14–15 — matched 16S + faecal metabolome                                               | 16S BioProject **PRJNA763023** + faecal metabolome MetaboLights **MTBLS10232**                |
+- TIGER melanoma (PRJEB23709): pretreatment tumors with high versus low RNA-defined sarcosine-degradation score, `mean(z(SARDH), z(PIPOX))`.
+- Matched ccRCC metabolome–RNA-seq cohort: tumors with low versus high measured sarcosine intensity using the prespecified within-cohort median split.
 
-## Not in this repository
+The same four exact MSigDB programs were enriched in the target direction in both cohorts:
 
-- **Figure 4–5 (mouse experiments):** analysed in GraphPad Prism (not R); source data reported with the manuscript.
-- **Figure 1a / Supplementary Figure 1a (pathway schematics):** drawn from KEGG pathway maps (map00260, map00670, map00330) and assembled in BioRender — no code.
+`APC cross-presentation → TCR signaling → TNFR2-related noncanonical NF-κB expression program → IFNG response`
 
-## Software
+The arrows denote a biologically ordered **candidate pathway-enrichment axis**. The shared result is a bulk-tumor program-level association, not proof of temporal causality, receptor engagement, phosphorylation, or signaling within one cell type. The complete exposure-linked serial route did not replicate in ccRCC, and common NFKB2/RELB transcription-factor activation was not demonstrated.
 
-Analyses were run in **R (≥ 4.5)** with Bioconductor; key packages are cited in the
-manuscript Methods and listed at the top of each script (e.g. MetaPhlAn4-derived
-profiles, MaAsLin2, ANCOM-BC2, metafor, vegan, limma, DADA2, phyloseq, survival).
-Each script lists the specific package versions used.
+Prespecified RNA-only validation used TCGA NSCLC primary tumors (LUAD/LUSC), where all four exact pathways replicated. This NSCLC result, together with the melanoma–ccRCC discovery analysis, is the immune-pathway analysis selected for the manuscript.
 
-## How to use
+## Repository map
 
-1. Pick the folder for the figure you want to reproduce.
-2. Read that folder's `README.md` (run order + inputs).
-3. Download the listed data from its accession(s) into the layout described there.
-4. Set the R working directory to the analysis folder and run the scripts in order.
+| Directory | Cohort / data type | Purpose |
+|---|---|---|
+| `analyses/melanoma_ccrcc_shared_immune_axis/` | TIGER melanoma + matched ccRCC bulk tumor | Exact-set intersection, leading-edge overlap, gene-disjoint route models, TF diagnostics, and final narrowing |
+| `analyses/tcga_nsclc_immune_axis_validation/` | TCGA LUAD/LUSC bulk tumor | Prespecified RNA-only validation of the shared immune axis |
+| `analyses/tiger_melanoma_immunotherapy_rnaseq/` | PRJEB23709 bulk RNA-seq | ICI response/survival analyses and upstream immune-pathway analyses |
+| `analyses/ccrcc_matched_metabolome_rnaseq/` | matched tumor metabolome + RNA-seq | Sarcosine grouping, GSEA, deconvolution, TF inference, continuous/quartile sensitivities, and pathway narrowing |
+| `analyses/gse207422_nsclc_scrna/` | GSE207422 single-cell RNA-seq | Sarcosine functional-score analyses with frozen lineage annotation and patient-aware lineage summaries |
+| `analyses/crc_fecal_metabolomics/` | MTBLS10232 | CRC-versus-control fecal metabolomics |
+| `analyses/ccrcc_tumor_metabolomics/` | Hakimi et al. ccRCC tissue metabolomics | Paired tumor-versus-normal sarcosine analysis |
+| `analyses/crc_wgs_microbiome/` | four CRC shotgun-metagenomic cohorts | Microbial sarcosine-degradation capacity and cross-cohort consistency |
+| `analyses/nsclc_wgs_microbiome/` | four NSCLC ICI shotgun-metagenomic projects | Microbial sarcosine functions, taxa, ICI response, and survival |
+| `analyses/nsclc_16s_microbiome/` | PRJEB26531 16S | Independent NSCLC microbiome corroboration |
+| `analyses/crc_matched_16s_metabolomics/` | PRJNA763023 + MTBLS10232 | Matched genus-level microbiome–sarcosine integration |
 
-## License
+## Data and reproducibility
 
-No license file is included yet. To allow reuse, consider adding a `LICENSE`
-(e.g. MIT for permissive reuse). Until then, all rights are reserved by default.
+Raw public data and large processed matrices are not redistributed. See [DATASETS.md](DATASETS.md) for accessions and specimen definitions, [REPRODUCIBILITY.md](REPRODUCIBILITY.md) for the execution contract, and [ANALYSIS_STATUS.md](ANALYSIS_STATUS.md) for the evidence level of each module.
 
-## Citation
+Selected result tables are included where they are needed to audit the reported conclusions. Machine-specific source paths have been removed from the public manifests while retaining file hashes and dataset identities.
 
-If you use this code, please cite the manuscript:
-_[Authors]. [Title]. [Journal] [Year]. [DOI]._ — to be completed on acceptance.
+## Important interpretation notes
+
+- “TNFR2-related noncanonical NF-κB” is the name of the exact Reactome expression program used in the analysis. Enrichment of that set does not by itself demonstrate TNFR2 ligation or NFKB2/RELB protein activation.
+- Melanoma and ccRCC use different sarcosine-related exposures: an RNA-derived degradation score versus measured metabolite intensity.
+- All discovery and TCGA validation results are from bulk tumor tissue unless a module is explicitly labeled single-cell.
+- No license is asserted here; users should obtain permission before redistributing or reusing code beyond ordinary scholarly inspection.

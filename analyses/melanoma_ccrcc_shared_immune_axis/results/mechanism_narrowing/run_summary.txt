@@ -1,0 +1,4 @@
+Script SHA256: c99c93c9a8526edad98a31779c0c9f3510b7615c7d4dfc8fedecfd9cbdbee1b2
+MSigDB version: 2026.1.Hs
+Bootstrap replicates per route/direction/model/cohort: 5000
+Leading route: APC -> TCR -> noncanonical NF-kappaB -> IFNG

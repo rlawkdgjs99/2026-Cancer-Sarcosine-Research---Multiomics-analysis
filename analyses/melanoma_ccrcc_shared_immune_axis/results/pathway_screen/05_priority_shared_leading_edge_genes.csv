@@ -1,0 +1,279 @@
+pathway,theme,display_label,shared_leading_edge_gene
+GOBP_ANTIGEN_PROCESSING_AND_PRESENTATION,Antigen presentation/T-cell interface,Antigen processing and presentation,B2M
+GOBP_ANTIGEN_PROCESSING_AND_PRESENTATION,Antigen presentation/T-cell interface,Antigen processing and presentation,ERAP1
+GOBP_ANTIGEN_PROCESSING_AND_PRESENTATION,Antigen presentation/T-cell interface,Antigen processing and presentation,HLA-A
+GOBP_ANTIGEN_PROCESSING_AND_PRESENTATION,Antigen presentation/T-cell interface,Antigen processing and presentation,HLA-B
+GOBP_ANTIGEN_PROCESSING_AND_PRESENTATION,Antigen presentation/T-cell interface,Antigen processing and presentation,HLA-C
+GOBP_ANTIGEN_PROCESSING_AND_PRESENTATION,Antigen presentation/T-cell interface,Antigen processing and presentation,HLA-DMB
+GOBP_ANTIGEN_PROCESSING_AND_PRESENTATION,Antigen presentation/T-cell interface,Antigen processing and presentation,HLA-DQA1
+GOBP_ANTIGEN_PROCESSING_AND_PRESENTATION,Antigen presentation/T-cell interface,Antigen processing and presentation,HLA-DQB1
+GOBP_ANTIGEN_PROCESSING_AND_PRESENTATION,Antigen presentation/T-cell interface,Antigen processing and presentation,HLA-DQB2
+GOBP_ANTIGEN_PROCESSING_AND_PRESENTATION,Antigen presentation/T-cell interface,Antigen processing and presentation,HLA-DRB5
+GOBP_ANTIGEN_PROCESSING_AND_PRESENTATION,Antigen presentation/T-cell interface,Antigen processing and presentation,HLA-F
+GOBP_ANTIGEN_PROCESSING_AND_PRESENTATION,Antigen presentation/T-cell interface,Antigen processing and presentation,PSMB8
+GOBP_ANTIGEN_PROCESSING_AND_PRESENTATION,Antigen presentation/T-cell interface,Antigen processing and presentation,RELB
+GOBP_ANTIGEN_PROCESSING_AND_PRESENTATION,Antigen presentation/T-cell interface,Antigen processing and presentation,RFTN1
+GOBP_ANTIGEN_PROCESSING_AND_PRESENTATION,Antigen presentation/T-cell interface,Antigen processing and presentation,TAP1
+GOBP_ANTIGEN_PROCESSING_AND_PRESENTATION,Antigen presentation/T-cell interface,Antigen processing and presentation,TAPBP
+REACTOME_ANTIGEN_PROCESSING_CROSS_PRESENTATION,Antigen presentation/T-cell interface,Antigen cross-presentation,B2M
+REACTOME_ANTIGEN_PROCESSING_CROSS_PRESENTATION,Antigen presentation/T-cell interface,Antigen cross-presentation,CTSS
+REACTOME_ANTIGEN_PROCESSING_CROSS_PRESENTATION,Antigen presentation/T-cell interface,Antigen cross-presentation,HLA-A
+REACTOME_ANTIGEN_PROCESSING_CROSS_PRESENTATION,Antigen presentation/T-cell interface,Antigen cross-presentation,HLA-B
+REACTOME_ANTIGEN_PROCESSING_CROSS_PRESENTATION,Antigen presentation/T-cell interface,Antigen cross-presentation,HLA-C
+REACTOME_ANTIGEN_PROCESSING_CROSS_PRESENTATION,Antigen presentation/T-cell interface,Antigen cross-presentation,HLA-E
+REACTOME_ANTIGEN_PROCESSING_CROSS_PRESENTATION,Antigen presentation/T-cell interface,Antigen cross-presentation,HLA-F
+REACTOME_ANTIGEN_PROCESSING_CROSS_PRESENTATION,Antigen presentation/T-cell interface,Antigen cross-presentation,LY96
+REACTOME_ANTIGEN_PROCESSING_CROSS_PRESENTATION,Antigen presentation/T-cell interface,Antigen cross-presentation,PSMB8
+REACTOME_ANTIGEN_PROCESSING_CROSS_PRESENTATION,Antigen presentation/T-cell interface,Antigen cross-presentation,PSMB9
+REACTOME_ANTIGEN_PROCESSING_CROSS_PRESENTATION,Antigen presentation/T-cell interface,Antigen cross-presentation,TAP1
+REACTOME_ANTIGEN_PROCESSING_CROSS_PRESENTATION,Antigen presentation/T-cell interface,Antigen cross-presentation,TAPBP
+REACTOME_TCR_SIGNALING,Antigen presentation/T-cell interface,TCR signaling,CARD11
+REACTOME_TCR_SIGNALING,Antigen presentation/T-cell interface,TCR signaling,EVL
+REACTOME_TCR_SIGNALING,Antigen presentation/T-cell interface,TCR signaling,GRAP2
+REACTOME_TCR_SIGNALING,Antigen presentation/T-cell interface,TCR signaling,HLA-DQA1
+REACTOME_TCR_SIGNALING,Antigen presentation/T-cell interface,TCR signaling,HLA-DQB1
+REACTOME_TCR_SIGNALING,Antigen presentation/T-cell interface,TCR signaling,HLA-DQB2
+REACTOME_TCR_SIGNALING,Antigen presentation/T-cell interface,TCR signaling,HLA-DRA
+REACTOME_TCR_SIGNALING,Antigen presentation/T-cell interface,TCR signaling,HLA-DRB1
+REACTOME_TCR_SIGNALING,Antigen presentation/T-cell interface,TCR signaling,HLA-DRB5
+REACTOME_TCR_SIGNALING,Antigen presentation/T-cell interface,TCR signaling,ITK
+REACTOME_TCR_SIGNALING,Antigen presentation/T-cell interface,TCR signaling,LCP2
+REACTOME_TCR_SIGNALING,Antigen presentation/T-cell interface,TCR signaling,NFKB1
+REACTOME_TCR_SIGNALING,Antigen presentation/T-cell interface,TCR signaling,NFKBIA
+REACTOME_TCR_SIGNALING,Antigen presentation/T-cell interface,TCR signaling,PTPN22
+GOBP_REGULATION_OF_T_CELL_ACTIVATION,Antigen presentation/T-cell interface,Regulation of T-cell activation,B2M
+GOBP_REGULATION_OF_T_CELL_ACTIVATION,Antigen presentation/T-cell interface,Regulation of T-cell activation,CCL2
+GOBP_REGULATION_OF_T_CELL_ACTIVATION,Antigen presentation/T-cell interface,Regulation of T-cell activation,CD274
+GOBP_REGULATION_OF_T_CELL_ACTIVATION,Antigen presentation/T-cell interface,Regulation of T-cell activation,CD28
+GOBP_REGULATION_OF_T_CELL_ACTIVATION,Antigen presentation/T-cell interface,Regulation of T-cell activation,CD300A
+GOBP_REGULATION_OF_T_CELL_ACTIVATION,Antigen presentation/T-cell interface,Regulation of T-cell activation,CD80
+GOBP_REGULATION_OF_T_CELL_ACTIVATION,Antigen presentation/T-cell interface,Regulation of T-cell activation,HAVCR2
+GOBP_REGULATION_OF_T_CELL_ACTIVATION,Antigen presentation/T-cell interface,Regulation of T-cell activation,HLA-A
+GOBP_REGULATION_OF_T_CELL_ACTIVATION,Antigen presentation/T-cell interface,Regulation of T-cell activation,HLA-DMB
+GOBP_REGULATION_OF_T_CELL_ACTIVATION,Antigen presentation/T-cell interface,Regulation of T-cell activation,HLA-DQA1
+GOBP_REGULATION_OF_T_CELL_ACTIVATION,Antigen presentation/T-cell interface,Regulation of T-cell activation,HLA-DQB1
+GOBP_REGULATION_OF_T_CELL_ACTIVATION,Antigen presentation/T-cell interface,Regulation of T-cell activation,HLA-DQB2
+GOBP_REGULATION_OF_T_CELL_ACTIVATION,Antigen presentation/T-cell interface,Regulation of T-cell activation,HLA-DRB5
+GOBP_REGULATION_OF_T_CELL_ACTIVATION,Antigen presentation/T-cell interface,Regulation of T-cell activation,IL2RA
+GOBP_REGULATION_OF_T_CELL_ACTIVATION,Antigen presentation/T-cell interface,Regulation of T-cell activation,IL4I1
+GOBP_REGULATION_OF_T_CELL_ACTIVATION,Antigen presentation/T-cell interface,Regulation of T-cell activation,PIK3R6
+GOBP_REGULATION_OF_T_CELL_ACTIVATION,Antigen presentation/T-cell interface,Regulation of T-cell activation,PSMB8
+GOBP_REGULATION_OF_T_CELL_ACTIVATION,Antigen presentation/T-cell interface,Regulation of T-cell activation,PTPN22
+GOBP_REGULATION_OF_T_CELL_ACTIVATION,Antigen presentation/T-cell interface,Regulation of T-cell activation,RASGRP1
+GOBP_REGULATION_OF_T_CELL_ACTIVATION,Antigen presentation/T-cell interface,Regulation of T-cell activation,TGFB1
+GOBP_REGULATION_OF_T_CELL_ACTIVATION,Antigen presentation/T-cell interface,Regulation of T-cell activation,TOX
+GOBP_REGULATION_OF_T_CELL_ACTIVATION,Antigen presentation/T-cell interface,Regulation of T-cell activation,ZC3H12A
+GOBP_TYPE_II_INTERFERON_PRODUCTION,Type-II-IFN/IFNG,Type-II IFN production,BTN3A1
+GOBP_TYPE_II_INTERFERON_PRODUCTION,Type-II-IFN/IFNG,Type-II IFN production,BTN3A2
+GOBP_TYPE_II_INTERFERON_PRODUCTION,Type-II-IFN/IFNG,Type-II IFN production,CD274
+GOBP_TYPE_II_INTERFERON_PRODUCTION,Type-II-IFN/IFNG,Type-II IFN production,CLEC7A
+GOBP_TYPE_II_INTERFERON_PRODUCTION,Type-II-IFN/IFNG,Type-II IFN production,HAVCR2
+GOBP_TYPE_II_INTERFERON_PRODUCTION,Type-II-IFN/IFNG,Type-II IFN production,HLA-A
+GOBP_TYPE_II_INTERFERON_PRODUCTION,Type-II-IFN/IFNG,Type-II IFN production,HLA-DRB1
+GOBP_TYPE_II_INTERFERON_PRODUCTION,Type-II-IFN/IFNG,Type-II IFN production,IL12RB1
+GOBP_TYPE_II_INTERFERON_PRODUCTION,Type-II-IFN/IFNG,Type-II IFN production,IRF8
+GOBP_TYPE_II_INTERFERON_PRODUCTION,Type-II-IFN/IFNG,Type-II IFN production,LGALS9
+GOBP_TYPE_II_INTERFERON_PRODUCTION,Type-II-IFN/IFNG,Type-II IFN production,PSMB8
+GOBP_TYPE_II_INTERFERON_PRODUCTION,Type-II-IFN/IFNG,Type-II IFN production,PSMB9
+GOBP_TYPE_II_INTERFERON_PRODUCTION,Type-II-IFN/IFNG,Type-II IFN production,PTPN22
+GOBP_TYPE_II_INTERFERON_PRODUCTION,Type-II-IFN/IFNG,Type-II IFN production,ZC3H12A
+GOBP_TYPE_II_INTERFERON_PRODUCTION,Type-II-IFN/IFNG,Type-II IFN production,ZNF683
+REACTOME_INTERFERON_GAMMA_SIGNALING,Type-II-IFN/IFNG,IFN-gamma signaling,B2M
+REACTOME_INTERFERON_GAMMA_SIGNALING,Type-II-IFN/IFNG,IFN-gamma signaling,GBP1
+REACTOME_INTERFERON_GAMMA_SIGNALING,Type-II-IFN/IFNG,IFN-gamma signaling,GBP2
+REACTOME_INTERFERON_GAMMA_SIGNALING,Type-II-IFN/IFNG,IFN-gamma signaling,GBP3
+REACTOME_INTERFERON_GAMMA_SIGNALING,Type-II-IFN/IFNG,IFN-gamma signaling,GBP4
+REACTOME_INTERFERON_GAMMA_SIGNALING,Type-II-IFN/IFNG,IFN-gamma signaling,GBP5
+REACTOME_INTERFERON_GAMMA_SIGNALING,Type-II-IFN/IFNG,IFN-gamma signaling,HLA-A
+REACTOME_INTERFERON_GAMMA_SIGNALING,Type-II-IFN/IFNG,IFN-gamma signaling,HLA-B
+REACTOME_INTERFERON_GAMMA_SIGNALING,Type-II-IFN/IFNG,IFN-gamma signaling,HLA-C
+REACTOME_INTERFERON_GAMMA_SIGNALING,Type-II-IFN/IFNG,IFN-gamma signaling,HLA-DQA1
+REACTOME_INTERFERON_GAMMA_SIGNALING,Type-II-IFN/IFNG,IFN-gamma signaling,HLA-DQB1
+REACTOME_INTERFERON_GAMMA_SIGNALING,Type-II-IFN/IFNG,IFN-gamma signaling,HLA-DQB2
+REACTOME_INTERFERON_GAMMA_SIGNALING,Type-II-IFN/IFNG,IFN-gamma signaling,HLA-DRA
+REACTOME_INTERFERON_GAMMA_SIGNALING,Type-II-IFN/IFNG,IFN-gamma signaling,HLA-DRB1
+REACTOME_INTERFERON_GAMMA_SIGNALING,Type-II-IFN/IFNG,IFN-gamma signaling,HLA-DRB5
+REACTOME_INTERFERON_GAMMA_SIGNALING,Type-II-IFN/IFNG,IFN-gamma signaling,HLA-E
+REACTOME_INTERFERON_GAMMA_SIGNALING,Type-II-IFN/IFNG,IFN-gamma signaling,HLA-F
+REACTOME_INTERFERON_GAMMA_SIGNALING,Type-II-IFN/IFNG,IFN-gamma signaling,IFNG
+REACTOME_INTERFERON_GAMMA_SIGNALING,Type-II-IFN/IFNG,IFN-gamma signaling,IRF1
+REACTOME_INTERFERON_GAMMA_SIGNALING,Type-II-IFN/IFNG,IFN-gamma signaling,IRF8
+REACTOME_INTERFERON_GAMMA_SIGNALING,Type-II-IFN/IFNG,IFN-gamma signaling,OASL
+REACTOME_INTERFERON_GAMMA_SIGNALING,Type-II-IFN/IFNG,IFN-gamma signaling,PTAFR
+REACTOME_INTERFERON_GAMMA_SIGNALING,Type-II-IFN/IFNG,IFN-gamma signaling,STAT1
+REACTOME_INTERFERON_GAMMA_SIGNALING,Type-II-IFN/IFNG,IFN-gamma signaling,TRIM14
+REACTOME_INTERFERON_GAMMA_SIGNALING,Type-II-IFN/IFNG,IFN-gamma signaling,TRIM21
+REACTOME_INTERFERON_GAMMA_SIGNALING,Type-II-IFN/IFNG,IFN-gamma signaling,TRIM38
+HALLMARK_INTERFERON_GAMMA_RESPONSE,Type-II-IFN/IFNG,IFN-gamma response,APOL6
+HALLMARK_INTERFERON_GAMMA_RESPONSE,Type-II-IFN/IFNG,IFN-gamma response,B2M
+HALLMARK_INTERFERON_GAMMA_RESPONSE,Type-II-IFN/IFNG,IFN-gamma response,CASP1
+HALLMARK_INTERFERON_GAMMA_RESPONSE,Type-II-IFN/IFNG,IFN-gamma response,CASP4
+HALLMARK_INTERFERON_GAMMA_RESPONSE,Type-II-IFN/IFNG,IFN-gamma response,CASP7
+HALLMARK_INTERFERON_GAMMA_RESPONSE,Type-II-IFN/IFNG,IFN-gamma response,CCL2
+HALLMARK_INTERFERON_GAMMA_RESPONSE,Type-II-IFN/IFNG,IFN-gamma response,CD274
+HALLMARK_INTERFERON_GAMMA_RESPONSE,Type-II-IFN/IFNG,IFN-gamma response,CD86
+HALLMARK_INTERFERON_GAMMA_RESPONSE,Type-II-IFN/IFNG,IFN-gamma response,CXCL10
+HALLMARK_INTERFERON_GAMMA_RESPONSE,Type-II-IFN/IFNG,IFN-gamma response,CXCL11
+HALLMARK_INTERFERON_GAMMA_RESPONSE,Type-II-IFN/IFNG,IFN-gamma response,CXCL9
+HALLMARK_INTERFERON_GAMMA_RESPONSE,Type-II-IFN/IFNG,IFN-gamma response,EPSTI1
+HALLMARK_INTERFERON_GAMMA_RESPONSE,Type-II-IFN/IFNG,IFN-gamma response,GBP4
+HALLMARK_INTERFERON_GAMMA_RESPONSE,Type-II-IFN/IFNG,IFN-gamma response,HLA-A
+HALLMARK_INTERFERON_GAMMA_RESPONSE,Type-II-IFN/IFNG,IFN-gamma response,HLA-B
+HALLMARK_INTERFERON_GAMMA_RESPONSE,Type-II-IFN/IFNG,IFN-gamma response,HLA-DQA1
+HALLMARK_INTERFERON_GAMMA_RESPONSE,Type-II-IFN/IFNG,IFN-gamma response,HLA-DRB1
+HALLMARK_INTERFERON_GAMMA_RESPONSE,Type-II-IFN/IFNG,IFN-gamma response,IFI27
+HALLMARK_INTERFERON_GAMMA_RESPONSE,Type-II-IFN/IFNG,IFN-gamma response,IFIT2
+HALLMARK_INTERFERON_GAMMA_RESPONSE,Type-II-IFN/IFNG,IFN-gamma response,IFIT3
+HALLMARK_INTERFERON_GAMMA_RESPONSE,Type-II-IFN/IFNG,IFN-gamma response,IL15RA
+HALLMARK_INTERFERON_GAMMA_RESPONSE,Type-II-IFN/IFNG,IFN-gamma response,IL18BP
+HALLMARK_INTERFERON_GAMMA_RESPONSE,Type-II-IFN/IFNG,IFN-gamma response,IRF1
+HALLMARK_INTERFERON_GAMMA_RESPONSE,Type-II-IFN/IFNG,IFN-gamma response,IRF8
+HALLMARK_INTERFERON_GAMMA_RESPONSE,Type-II-IFN/IFNG,IFN-gamma response,LAP3
+HALLMARK_INTERFERON_GAMMA_RESPONSE,Type-II-IFN/IFNG,IFN-gamma response,LCP2
+HALLMARK_INTERFERON_GAMMA_RESPONSE,Type-II-IFN/IFNG,IFN-gamma response,NFKB1
+HALLMARK_INTERFERON_GAMMA_RESPONSE,Type-II-IFN/IFNG,IFN-gamma response,NLRC5
+HALLMARK_INTERFERON_GAMMA_RESPONSE,Type-II-IFN/IFNG,IFN-gamma response,OASL
+HALLMARK_INTERFERON_GAMMA_RESPONSE,Type-II-IFN/IFNG,IFN-gamma response,PARP12
+HALLMARK_INTERFERON_GAMMA_RESPONSE,Type-II-IFN/IFNG,IFN-gamma response,PFKP
+HALLMARK_INTERFERON_GAMMA_RESPONSE,Type-II-IFN/IFNG,IFN-gamma response,PIM1
+HALLMARK_INTERFERON_GAMMA_RESPONSE,Type-II-IFN/IFNG,IFN-gamma response,PSMB8
+HALLMARK_INTERFERON_GAMMA_RESPONSE,Type-II-IFN/IFNG,IFN-gamma response,PSMB9
+HALLMARK_INTERFERON_GAMMA_RESPONSE,Type-II-IFN/IFNG,IFN-gamma response,RNF213
+HALLMARK_INTERFERON_GAMMA_RESPONSE,Type-II-IFN/IFNG,IFN-gamma response,RTP4
+HALLMARK_INTERFERON_GAMMA_RESPONSE,Type-II-IFN/IFNG,IFN-gamma response,SAMD9L
+HALLMARK_INTERFERON_GAMMA_RESPONSE,Type-II-IFN/IFNG,IFN-gamma response,SECTM1
+HALLMARK_INTERFERON_GAMMA_RESPONSE,Type-II-IFN/IFNG,IFN-gamma response,ST8SIA4
+HALLMARK_INTERFERON_GAMMA_RESPONSE,Type-II-IFN/IFNG,IFN-gamma response,STAT1
+HALLMARK_INTERFERON_GAMMA_RESPONSE,Type-II-IFN/IFNG,IFN-gamma response,STAT3
+HALLMARK_INTERFERON_GAMMA_RESPONSE,Type-II-IFN/IFNG,IFN-gamma response,TAP1
+HALLMARK_INTERFERON_GAMMA_RESPONSE,Type-II-IFN/IFNG,IFN-gamma response,TAPBP
+HALLMARK_INTERFERON_GAMMA_RESPONSE,Type-II-IFN/IFNG,IFN-gamma response,TNFAIP3
+HALLMARK_INTERFERON_GAMMA_RESPONSE,Type-II-IFN/IFNG,IFN-gamma response,TRIM14
+HALLMARK_INTERFERON_GAMMA_RESPONSE,Type-II-IFN/IFNG,IFN-gamma response,TRIM21
+HALLMARK_INTERFERON_GAMMA_RESPONSE,Type-II-IFN/IFNG,IFN-gamma response,UBE2L6
+HALLMARK_INTERFERON_GAMMA_RESPONSE,Type-II-IFN/IFNG,IFN-gamma response,ZNFX1
+HALLMARK_TNFA_SIGNALING_VIA_NFKB,TNF/NF-kappaB inflammatory,TNF-alpha signaling via NF-kappaB,ATF3
+HALLMARK_TNFA_SIGNALING_VIA_NFKB,TNF/NF-kappaB inflammatory,TNF-alpha signaling via NF-kappaB,BCL3
+HALLMARK_TNFA_SIGNALING_VIA_NFKB,TNF/NF-kappaB inflammatory,TNF-alpha signaling via NF-kappaB,CCL2
+HALLMARK_TNFA_SIGNALING_VIA_NFKB,TNF/NF-kappaB inflammatory,TNF-alpha signaling via NF-kappaB,CCL4
+HALLMARK_TNFA_SIGNALING_VIA_NFKB,TNF/NF-kappaB inflammatory,TNF-alpha signaling via NF-kappaB,CCRL2
+HALLMARK_TNFA_SIGNALING_VIA_NFKB,TNF/NF-kappaB inflammatory,TNF-alpha signaling via NF-kappaB,CD80
+HALLMARK_TNFA_SIGNALING_VIA_NFKB,TNF/NF-kappaB inflammatory,TNF-alpha signaling via NF-kappaB,CLCF1
+HALLMARK_TNFA_SIGNALING_VIA_NFKB,TNF/NF-kappaB inflammatory,TNF-alpha signaling via NF-kappaB,CXCL10
+HALLMARK_TNFA_SIGNALING_VIA_NFKB,TNF/NF-kappaB inflammatory,TNF-alpha signaling via NF-kappaB,CXCL11
+HALLMARK_TNFA_SIGNALING_VIA_NFKB,TNF/NF-kappaB inflammatory,TNF-alpha signaling via NF-kappaB,DRAM1
+HALLMARK_TNFA_SIGNALING_VIA_NFKB,TNF/NF-kappaB inflammatory,TNF-alpha signaling via NF-kappaB,FOSL2
+HALLMARK_TNFA_SIGNALING_VIA_NFKB,TNF/NF-kappaB inflammatory,TNF-alpha signaling via NF-kappaB,GCH1
+HALLMARK_TNFA_SIGNALING_VIA_NFKB,TNF/NF-kappaB inflammatory,TNF-alpha signaling via NF-kappaB,GEM
+HALLMARK_TNFA_SIGNALING_VIA_NFKB,TNF/NF-kappaB inflammatory,TNF-alpha signaling via NF-kappaB,ICAM1
+HALLMARK_TNFA_SIGNALING_VIA_NFKB,TNF/NF-kappaB inflammatory,TNF-alpha signaling via NF-kappaB,IFIT2
+HALLMARK_TNFA_SIGNALING_VIA_NFKB,TNF/NF-kappaB inflammatory,TNF-alpha signaling via NF-kappaB,IL15RA
+HALLMARK_TNFA_SIGNALING_VIA_NFKB,TNF/NF-kappaB inflammatory,TNF-alpha signaling via NF-kappaB,IRF1
+HALLMARK_TNFA_SIGNALING_VIA_NFKB,TNF/NF-kappaB inflammatory,TNF-alpha signaling via NF-kappaB,KLF6
+HALLMARK_TNFA_SIGNALING_VIA_NFKB,TNF/NF-kappaB inflammatory,TNF-alpha signaling via NF-kappaB,KYNU
+HALLMARK_TNFA_SIGNALING_VIA_NFKB,TNF/NF-kappaB inflammatory,TNF-alpha signaling via NF-kappaB,LDLR
+HALLMARK_TNFA_SIGNALING_VIA_NFKB,TNF/NF-kappaB inflammatory,TNF-alpha signaling via NF-kappaB,MAP3K8
+HALLMARK_TNFA_SIGNALING_VIA_NFKB,TNF/NF-kappaB inflammatory,TNF-alpha signaling via NF-kappaB,MXD1
+HALLMARK_TNFA_SIGNALING_VIA_NFKB,TNF/NF-kappaB inflammatory,TNF-alpha signaling via NF-kappaB,NFKB1
+HALLMARK_TNFA_SIGNALING_VIA_NFKB,TNF/NF-kappaB inflammatory,TNF-alpha signaling via NF-kappaB,NFKB2
+HALLMARK_TNFA_SIGNALING_VIA_NFKB,TNF/NF-kappaB inflammatory,TNF-alpha signaling via NF-kappaB,NFKBIA
+HALLMARK_TNFA_SIGNALING_VIA_NFKB,TNF/NF-kappaB inflammatory,TNF-alpha signaling via NF-kappaB,PDE4B
+HALLMARK_TNFA_SIGNALING_VIA_NFKB,TNF/NF-kappaB inflammatory,TNF-alpha signaling via NF-kappaB,PFKFB3
+HALLMARK_TNFA_SIGNALING_VIA_NFKB,TNF/NF-kappaB inflammatory,TNF-alpha signaling via NF-kappaB,PLAU
+HALLMARK_TNFA_SIGNALING_VIA_NFKB,TNF/NF-kappaB inflammatory,TNF-alpha signaling via NF-kappaB,PLAUR
+HALLMARK_TNFA_SIGNALING_VIA_NFKB,TNF/NF-kappaB inflammatory,TNF-alpha signaling via NF-kappaB,PLEK
+HALLMARK_TNFA_SIGNALING_VIA_NFKB,TNF/NF-kappaB inflammatory,TNF-alpha signaling via NF-kappaB,PMEPA1
+HALLMARK_TNFA_SIGNALING_VIA_NFKB,TNF/NF-kappaB inflammatory,TNF-alpha signaling via NF-kappaB,PTPRE
+HALLMARK_TNFA_SIGNALING_VIA_NFKB,TNF/NF-kappaB inflammatory,TNF-alpha signaling via NF-kappaB,RELB
+HALLMARK_TNFA_SIGNALING_VIA_NFKB,TNF/NF-kappaB inflammatory,TNF-alpha signaling via NF-kappaB,RIPK2
+HALLMARK_TNFA_SIGNALING_VIA_NFKB,TNF/NF-kappaB inflammatory,TNF-alpha signaling via NF-kappaB,SAT1
+HALLMARK_TNFA_SIGNALING_VIA_NFKB,TNF/NF-kappaB inflammatory,TNF-alpha signaling via NF-kappaB,SMAD3
+HALLMARK_TNFA_SIGNALING_VIA_NFKB,TNF/NF-kappaB inflammatory,TNF-alpha signaling via NF-kappaB,TAP1
+HALLMARK_TNFA_SIGNALING_VIA_NFKB,TNF/NF-kappaB inflammatory,TNF-alpha signaling via NF-kappaB,TIPARP
+HALLMARK_TNFA_SIGNALING_VIA_NFKB,TNF/NF-kappaB inflammatory,TNF-alpha signaling via NF-kappaB,TNFAIP3
+HALLMARK_TNFA_SIGNALING_VIA_NFKB,TNF/NF-kappaB inflammatory,TNF-alpha signaling via NF-kappaB,TNIP2
+HALLMARK_TNFA_SIGNALING_VIA_NFKB,TNF/NF-kappaB inflammatory,TNF-alpha signaling via NF-kappaB,TRAF1
+HALLMARK_TNFA_SIGNALING_VIA_NFKB,TNF/NF-kappaB inflammatory,TNF-alpha signaling via NF-kappaB,ZC3H12A
+HALLMARK_INFLAMMATORY_RESPONSE,TNF/NF-kappaB inflammatory,Inflammatory response,ADM
+HALLMARK_INFLAMMATORY_RESPONSE,TNF/NF-kappaB inflammatory,Inflammatory response,ADORA2B
+HALLMARK_INFLAMMATORY_RESPONSE,TNF/NF-kappaB inflammatory,Inflammatory response,CCL2
+HALLMARK_INFLAMMATORY_RESPONSE,TNF/NF-kappaB inflammatory,Inflammatory response,CCRL2
+HALLMARK_INFLAMMATORY_RESPONSE,TNF/NF-kappaB inflammatory,Inflammatory response,CXCL10
+HALLMARK_INFLAMMATORY_RESPONSE,TNF/NF-kappaB inflammatory,Inflammatory response,CXCL11
+HALLMARK_INFLAMMATORY_RESPONSE,TNF/NF-kappaB inflammatory,Inflammatory response,CXCL9
+HALLMARK_INFLAMMATORY_RESPONSE,TNF/NF-kappaB inflammatory,Inflammatory response,CXCR6
+HALLMARK_INFLAMMATORY_RESPONSE,TNF/NF-kappaB inflammatory,Inflammatory response,GCH1
+HALLMARK_INFLAMMATORY_RESPONSE,TNF/NF-kappaB inflammatory,Inflammatory response,ICAM1
+HALLMARK_INFLAMMATORY_RESPONSE,TNF/NF-kappaB inflammatory,Inflammatory response,IFITM1
+HALLMARK_INFLAMMATORY_RESPONSE,TNF/NF-kappaB inflammatory,Inflammatory response,IL15RA
+HALLMARK_INFLAMMATORY_RESPONSE,TNF/NF-kappaB inflammatory,Inflammatory response,IL4R
+HALLMARK_INFLAMMATORY_RESPONSE,TNF/NF-kappaB inflammatory,Inflammatory response,IRAK2
+HALLMARK_INFLAMMATORY_RESPONSE,TNF/NF-kappaB inflammatory,Inflammatory response,IRF1
+HALLMARK_INFLAMMATORY_RESPONSE,TNF/NF-kappaB inflammatory,Inflammatory response,ITGA5
+HALLMARK_INFLAMMATORY_RESPONSE,TNF/NF-kappaB inflammatory,Inflammatory response,KCNJ2
+HALLMARK_INFLAMMATORY_RESPONSE,TNF/NF-kappaB inflammatory,Inflammatory response,KLF6
+HALLMARK_INFLAMMATORY_RESPONSE,TNF/NF-kappaB inflammatory,Inflammatory response,LAMP3
+HALLMARK_INFLAMMATORY_RESPONSE,TNF/NF-kappaB inflammatory,Inflammatory response,LCP2
+HALLMARK_INFLAMMATORY_RESPONSE,TNF/NF-kappaB inflammatory,Inflammatory response,LDLR
+HALLMARK_INFLAMMATORY_RESPONSE,TNF/NF-kappaB inflammatory,Inflammatory response,LYN
+HALLMARK_INFLAMMATORY_RESPONSE,TNF/NF-kappaB inflammatory,Inflammatory response,NFKB1
+HALLMARK_INFLAMMATORY_RESPONSE,TNF/NF-kappaB inflammatory,Inflammatory response,NMI
+HALLMARK_INFLAMMATORY_RESPONSE,TNF/NF-kappaB inflammatory,Inflammatory response,PDE4B
+HALLMARK_INFLAMMATORY_RESPONSE,TNF/NF-kappaB inflammatory,Inflammatory response,PDPN
+HALLMARK_INFLAMMATORY_RESPONSE,TNF/NF-kappaB inflammatory,Inflammatory response,PLAUR
+HALLMARK_INFLAMMATORY_RESPONSE,TNF/NF-kappaB inflammatory,Inflammatory response,PTAFR
+HALLMARK_INFLAMMATORY_RESPONSE,TNF/NF-kappaB inflammatory,Inflammatory response,PTPRE
+HALLMARK_INFLAMMATORY_RESPONSE,TNF/NF-kappaB inflammatory,Inflammatory response,RASGRP1
+HALLMARK_INFLAMMATORY_RESPONSE,TNF/NF-kappaB inflammatory,Inflammatory response,RIPK2
+HALLMARK_INFLAMMATORY_RESPONSE,TNF/NF-kappaB inflammatory,Inflammatory response,RTP4
+HALLMARK_INFLAMMATORY_RESPONSE,TNF/NF-kappaB inflammatory,Inflammatory response,SEMA4D
+HALLMARK_INFLAMMATORY_RESPONSE,TNF/NF-kappaB inflammatory,Inflammatory response,TAPBP
+HALLMARK_INFLAMMATORY_RESPONSE,TNF/NF-kappaB inflammatory,Inflammatory response,TIMP1
+HALLMARK_INTERFERON_ALPHA_RESPONSE,Broad immune-inflamed state,IFN-alpha response,B2M
+HALLMARK_INTERFERON_ALPHA_RESPONSE,Broad immune-inflamed state,IFN-alpha response,CASP1
+HALLMARK_INTERFERON_ALPHA_RESPONSE,Broad immune-inflamed state,IFN-alpha response,CCRL2
+HALLMARK_INTERFERON_ALPHA_RESPONSE,Broad immune-inflamed state,IFN-alpha response,CMPK2
+HALLMARK_INTERFERON_ALPHA_RESPONSE,Broad immune-inflamed state,IFN-alpha response,CXCL10
+HALLMARK_INTERFERON_ALPHA_RESPONSE,Broad immune-inflamed state,IFN-alpha response,CXCL11
+HALLMARK_INTERFERON_ALPHA_RESPONSE,Broad immune-inflamed state,IFN-alpha response,EPSTI1
+HALLMARK_INTERFERON_ALPHA_RESPONSE,Broad immune-inflamed state,IFN-alpha response,GBP2
+HALLMARK_INTERFERON_ALPHA_RESPONSE,Broad immune-inflamed state,IFN-alpha response,GBP4
+HALLMARK_INTERFERON_ALPHA_RESPONSE,Broad immune-inflamed state,IFN-alpha response,HLA-C
+HALLMARK_INTERFERON_ALPHA_RESPONSE,Broad immune-inflamed state,IFN-alpha response,IFI27
+HALLMARK_INTERFERON_ALPHA_RESPONSE,Broad immune-inflamed state,IFN-alpha response,IFIT2
+HALLMARK_INTERFERON_ALPHA_RESPONSE,Broad immune-inflamed state,IFN-alpha response,IFIT3
+HALLMARK_INTERFERON_ALPHA_RESPONSE,Broad immune-inflamed state,IFN-alpha response,IFITM1
+HALLMARK_INTERFERON_ALPHA_RESPONSE,Broad immune-inflamed state,IFN-alpha response,IL4R
+HALLMARK_INTERFERON_ALPHA_RESPONSE,Broad immune-inflamed state,IFN-alpha response,IRF1
+HALLMARK_INTERFERON_ALPHA_RESPONSE,Broad immune-inflamed state,IFN-alpha response,LAMP3
+HALLMARK_INTERFERON_ALPHA_RESPONSE,Broad immune-inflamed state,IFN-alpha response,LAP3
+HALLMARK_INTERFERON_ALPHA_RESPONSE,Broad immune-inflamed state,IFN-alpha response,NMI
+HALLMARK_INTERFERON_ALPHA_RESPONSE,Broad immune-inflamed state,IFN-alpha response,NUB1
+HALLMARK_INTERFERON_ALPHA_RESPONSE,Broad immune-inflamed state,IFN-alpha response,OASL
+HALLMARK_INTERFERON_ALPHA_RESPONSE,Broad immune-inflamed state,IFN-alpha response,PARP12
+HALLMARK_INTERFERON_ALPHA_RESPONSE,Broad immune-inflamed state,IFN-alpha response,PSMB8
+HALLMARK_INTERFERON_ALPHA_RESPONSE,Broad immune-inflamed state,IFN-alpha response,PSMB9
+HALLMARK_INTERFERON_ALPHA_RESPONSE,Broad immune-inflamed state,IFN-alpha response,RTP4
+HALLMARK_INTERFERON_ALPHA_RESPONSE,Broad immune-inflamed state,IFN-alpha response,SAMD9
+HALLMARK_INTERFERON_ALPHA_RESPONSE,Broad immune-inflamed state,IFN-alpha response,SAMD9L
+HALLMARK_INTERFERON_ALPHA_RESPONSE,Broad immune-inflamed state,IFN-alpha response,TAP1
+HALLMARK_INTERFERON_ALPHA_RESPONSE,Broad immune-inflamed state,IFN-alpha response,TRIM14
+HALLMARK_INTERFERON_ALPHA_RESPONSE,Broad immune-inflamed state,IFN-alpha response,TRIM21
+HALLMARK_INTERFERON_ALPHA_RESPONSE,Broad immune-inflamed state,IFN-alpha response,UBE2L6
+HALLMARK_COMPLEMENT,Broad immune-inflamed state,Complement,AKAP10
+HALLMARK_COMPLEMENT,Broad immune-inflamed state,Complement,APOC1
+HALLMARK_COMPLEMENT,Broad immune-inflamed state,Complement,C2
+HALLMARK_COMPLEMENT,Broad immune-inflamed state,Complement,CASP4
+HALLMARK_COMPLEMENT,Broad immune-inflamed state,Complement,CASP7
+HALLMARK_COMPLEMENT,Broad immune-inflamed state,Complement,F5
+HALLMARK_COMPLEMENT,Broad immune-inflamed state,Complement,GRB2
+HALLMARK_COMPLEMENT,Broad immune-inflamed state,Complement,GZMB
+HALLMARK_COMPLEMENT,Broad immune-inflamed state,Complement,LAP3
+HALLMARK_COMPLEMENT,Broad immune-inflamed state,Complement,LCP2
+HALLMARK_COMPLEMENT,Broad immune-inflamed state,Complement,PDGFB
+HALLMARK_COMPLEMENT,Broad immune-inflamed state,Complement,PHEX
+HALLMARK_COMPLEMENT,Broad immune-inflamed state,Complement,PLA2G7
+HALLMARK_COMPLEMENT,Broad immune-inflamed state,Complement,PLAUR
+HALLMARK_COMPLEMENT,Broad immune-inflamed state,Complement,PLEK
+HALLMARK_COMPLEMENT,Broad immune-inflamed state,Complement,RASGRP1
+HALLMARK_COMPLEMENT,Broad immune-inflamed state,Complement,TNFAIP3

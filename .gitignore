@@ -1,0 +1,42 @@
+# ---- macOS ----
+.DS_Store
+
+# ---- R session artifacts ----
+.Rhistory
+.RData
+.Rapp.history
+.Rproj.user/
+*.Rproj
+
+# ---- Raw / large data: NOT tracked ----
+# Obtain the data from the public accessions listed in README.md.
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.bam
+*.sam
+*.rds
+*.RDS
+*.h5
+*.feather
+*.parquet
+*.biom
+data/
+raw_data/
+raw_download/
+results/
+outputs/
+
+# ---- Selected compact audit outputs tracked for reproducibility ----
+# Raw and bulky result directories remain ignored globally. These two modules
+# intentionally publish only compact tables, reports, and run metadata.
+!analyses/melanoma_ccrcc_shared_immune_axis/results/
+!analyses/melanoma_ccrcc_shared_immune_axis/results/**
+!analyses/tcga_nsclc_immune_axis_validation/results/
+!analyses/tcga_nsclc_immune_axis_validation/results/**
+
+# ---- Tabular data dumps ----
+# Uncomment these if you do NOT want to track any intermediate tables:
+# *.tsv
+# *.csv

@@ -1,0 +1,11 @@
+cohort,predictor,VIF
+Melanoma: Degradation-High,APC,2.07162259325851
+Melanoma: Degradation-High,TCR,3.31314125627476
+Melanoma: Degradation-High,CD28_family,1.11698595221971
+Melanoma: Degradation-High,Canonical_NFkB,2.05125539012738
+Melanoma: Degradation-High,Noncanonical_NFkB,4.37203712810375
+ccRCC: Sarcosine-Low,APC,3.73381516981034
+ccRCC: Sarcosine-Low,TCR,3.90661939991791
+ccRCC: Sarcosine-Low,CD28_family,2.21506894718528
+ccRCC: Sarcosine-Low,Canonical_NFkB,1.73721794582376
+ccRCC: Sarcosine-Low,Noncanonical_NFkB,3.44477740131216

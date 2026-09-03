@@ -1,0 +1,8 @@
+TCGA NSCLC public-release table check: PASS
+Scope: TCGA LUAD/LUSC primary tumors.
+Primary tumors: 1017
+Complete adjusted-model tumors: 988
+Exact pathways with positive NES and collection-wide BH q < 0.05: 4/4
+Exact pathway-score High-vs-Low effects positive and BH q < 0.05: 4/4
+Gene-disjoint adjacent-node associations positive and BH q < 0.05: 3/3
+Three-cohort replication table contains only melanoma, ccRCC, and NSCLC target states.

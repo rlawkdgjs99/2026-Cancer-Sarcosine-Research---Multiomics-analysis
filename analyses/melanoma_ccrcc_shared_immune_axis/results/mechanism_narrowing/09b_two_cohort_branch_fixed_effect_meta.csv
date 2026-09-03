@@ -1,0 +1,3 @@
+branch,cohorts_n,fixed_effect_beta,fixed_effect_SE,fixed_effect_CI_low,fixed_effect_CI_high,fixed_effect_z,fixed_effect_p,Cochran_Q,Q_df,heterogeneity_p,I2_percent,direction_consistent_positive,cohort_betas
+Canonical_NFkB,2,-0.0154284594592356,0.0414140331408289,-0.0965984728698085,0.0657415539513373,-0.372541824332128,0.709489477976741,23.1037190456261,1,1.53493523966941e-06,95.671692518312,FALSE,Melanoma: Degradation-High:0.17131;ccRCC: Sarcosine-Low:-0.22762
+Noncanonical_NFkB,2,0.267727104697669,0.0597382420594233,0.150642301761464,0.384811907633875,4.48167029139146,7.40611018511027e-06,2.45238261214235,1,0.117346627986012,59.2233285683582,TRUE,Melanoma: Degradation-High:0.17564;ccRCC: Sarcosine-Low:0.36277

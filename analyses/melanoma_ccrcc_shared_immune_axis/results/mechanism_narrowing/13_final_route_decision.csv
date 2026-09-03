@@ -1,0 +1,5 @@
+rank,route,criteria_passed,criteria_total,designation,complete_serial_replicated_in_both_cohorts,claim_boundary
+1,APC -> TCR -> noncanonical NF-kappaB -> IFNG,8,13,Direction-consistent branch association inside the shared co-enrichment program; complete serial route not replicated,FALSE,Exploratory cross-sectional bulk-RNA route; not a proven temporal or same-cell mechanism
+2,APC -> TCR -> canonical NF-kappaB -> IFNG,8,13,Lower-priority comparator,FALSE,Exploratory cross-sectional bulk-RNA route; not a proven temporal or same-cell mechanism
+3,APC -> broad CD28-family regulation -> canonical NF-kappaB -> IFNG,7,13,Excluded as a specific CD28 route; broad mixed-program sensitivity only,FALSE,Exploratory cross-sectional bulk-RNA route; not a proven temporal or same-cell mechanism
+4,APC -> broad CD28-family regulation -> noncanonical NF-kappaB -> IFNG,5,13,Excluded as a specific CD28 route; broad mixed-program sensitivity only,FALSE,Exploratory cross-sectional bulk-RNA route; not a proven temporal or same-cell mechanism

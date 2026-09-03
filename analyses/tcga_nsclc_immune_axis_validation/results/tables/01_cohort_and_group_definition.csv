@@ -1,0 +1,2 @@
+"cohort","n_primary","median_cutoff","low_n","high_n","model_n","model_low_n","model_high_n","subtypes","score_reconstruction_max_abs_delta"
+"NSCLC",1017,0.0312701564451439,509,508,988,496,492,"LUAD;LUSC",1.33226762955019e-15
