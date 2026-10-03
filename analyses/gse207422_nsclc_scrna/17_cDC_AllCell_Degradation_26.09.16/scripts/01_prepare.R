@@ -1,0 +1,40 @@
+#!/usr/bin/env Rscript
+source(file.path(dirname(sub('^--file=','',commandArgs(FALSE)[grepl('^--file=',commandArgs(FALSE))])),'common.R'))
+stopifnot(!file.exists(file.path(out,'resources/outcome_prepared.rds')))
+checks<-list();ck<-function(k,v,detail=''){checks[[length(checks)+1L]]<<-data.table(check=k,pass=isTRUE(v),detail=as.character(detail));cat(k,isTRUE(v),detail,'\n');flush.console();if(!isTRUE(v))stop(k)}
+paths<-c(raw=file.path(src,'02_lineage_reannotation/intermediate/01_full_counts_mt20_qc.rds'),cells=file.path(src,'02_lineage_reannotation/results/tables/09_final_cell_lineages_FROZEN.csv'),stored=file.path(src,'02_lineage_reannotation/intermediate/10_lineage_pseudobulk_counts.rds'),groups=file.path(legacy,'results/tables/01_FROZEN_allcell_patient_scores_groups.csv'),exposure=file.path(legacy,'resources/allcell_prepared.rds'),membership=member_path,exact=file.path(src,'04_Fig7_Immune_Programs_26.09.06/resources/Fig6_exact_MSigDB_2026.1.Hs_membership.csv'),plan=file.path(out,'ANALYSIS_PLAN_FROZEN.md'))
+wt(data.table(role=names(paths),path=substring(paths,nchar(src)+2),sha256=vapply(paths,sha,character(1))),'00_input_manifest.csv')
+protected<-unlist(lapply(c('14_AllCell_Degradation_CD8_cDC1_26.09.08','15_AllCell_Degradation_Pathway_Overview_26.09.14','16_Expanded_Immune_Degradation_Pathways_26.09.14'),function(p)list.files(file.path(src,p),recursive=TRUE,full.names=TRUE)))
+protected<-protected[!grepl('[.]DS_Store$|font_cache',protected)];wt(data.table(path=substring(protected,nchar(src)+2),sha256=vapply(protected,sha,character(1))),'00_protected_before.csv')
+f<-fread(paths['cells']);md<-fread(paths['groups']);a<-readRDS(paths['exposure']);md[,group:=factor(group,levels=c('Low','High'))]
+ck('unique patient sample cell IDs',nrow(md)==15&&!anyDuplicated(md$Patient)&&!anyDuplicated(md$Sample)&&nrow(f)==92053&&!anyDuplicated(f$cell_id))
+ck('frozen all-cell labels',identical(as.character(md$group),as.character(a$metadata$group))&&max(abs(md$degradation_mean_z-a$metadata$degradation_mean_z))<1e-14)
+xlog<-log2(1+sweep(a$counts$All_cells[c('SARDH','PIPOX'),],2,a$exposure$effective,'/')*1e6);zz<-t(scale(t(xlog)));D<-colMeans(zz)
+ck('exposure reconstructed without regrouping',max(abs(D-md$degradation_mean_z))<1e-12&&all(ifelse(D>median(D),'High','Low')==md$group))
+cat('Reading full sparse raw counts for independent cDC aggregation\n');flush.console()
+x<-readRDS(paths['raw']);f<-f[match(colnames(x),cell_id)];ck('raw cell alignment',identical(colnames(x),f$cell_id)&&nrow(x)==24292&&ncol(x)==92053&&all(Matrix::colSums(x)==f$library_size))
+use<-which(f$final_lineage=='Conventional DC');ck('all conventional DC only',length(use)==1007&&all(f$final_lineage[use]=='Conventional DC'))
+xc<-x[,use,drop=FALSE];ck('cDC raw integer nonnegative',all(is.finite(xc@x))&&all(xc@x>=0)&&all(xc@x==floor(xc@x)))
+mem<-sparseMatrix(i=seq_along(use),j=match(f$Sample[use],md$Sample),x=1,dims=c(length(use),15),dimnames=list(f$cell_id[use],md$Sample));pb<-as.matrix(xc%*%mem)
+stored<-readRDS(paths['stored'])[['Conventional DC']];ck('every cDC gene/patient equals stored pseudobulk',all(pb==as.matrix(stored[rownames(pb),md$Sample])))
+md[,cDC_cells:=tabulate(match(f$Sample[use],Sample),nbins=15)]
+u<-tapply(f$library_size[use],factor(f$Sample[use],levels=md$Sample),sum);ck('pseudobulk library equals cell UMI sum',all(colSums(pb)==u))
+wt(f[use,.(cell_id,Patient,Sample,final_lineage,library_size)],'00_cDC_cell_roster.csv');wt(md,'01_frozen_patient_groups.csv')
+wt(md[,.(Patient,Sample,treatment,histology,group,cDC_cells,eligible=cDC_cells>=50,exclusion_reason=ifelse(cDC_cells>=50,'included','fewer_than_50_cDC'))],'01_patient_eligibility.csv')
+saveRDS(list(counts=pb,metadata=md),file.path(out,'resources/raw_verified.rds'))
+rm(x,xc,mem,stored,a);gc()
+dt<-md[cDC_cells>=50];ck('explicit exploratory all9 exception',nrow(dt)==9&&sum(dt$cDC_cells)==857&&sum(dt$group=='High')==5&&sum(dt$group=='Low')==4)
+raw<-pb[,dt$Sample,drop=FALSE];X0<-model.matrix(reformulate(covars(dt)),dt);yy<-DGEList(raw);keep<-filterByExpr(yy,design=X0,min.count=10,min.total.count=15,large.n=10,min.prop=.7);yy<-calcNormFactors(yy[keep,,keep.lib.sizes=FALSE],method='TMM');eff<-yy$samples$lib.size*yy$samples$norm.factors
+ck('filtered normalized genes',sum(keep)>1000&&all(is.finite(eff))&&all(eff>0))
+dt[,':='(outcome_effective_library=eff,outcome_TMM_factor=yy$samples$norm.factors,outcome_retained_library=yy$samples$lib.size)]
+wt(dt,'01_cDC_normalization.csv');wt(data.table(gene=rownames(raw),retained=keep),'01_gene_filter.csv')
+elig<-rbindlist(lapply(scopes,function(sc){d<-if(startsWith(sc,'post'))dt[treatment=='Post']else copy(dt);pred<-if(endsWith(sc,'continuous'))'exposure_z'else'group';X<-model.matrix(reformulate(c(covars(d),pred)),d);r<-qr(X)$rank;ok<-nrow(d)>=8&&min(table(d$group))>=3&&r==ncol(X)&&nrow(d)-r>=5;ck(paste(sc,'eligible model'),ok);data.table(scope=sc,n=nrow(d),n_cells=sum(d$cDC_cells),High=sum(d$group=='High'),Low=sum(d$group=='Low'),rank=r,df=nrow(d)-r,status=if(ok)'TESTED'else'NE')}))
+ck('Post8 H5 L3 cells772',all(elig[scope=='post_group',.(n,High,Low,n_cells)]==data.table(n=8,High=5,Low=3,n_cells=772)))
+m<-as.data.table(readRDS(member_path));sets<-lapply(split(m$gene_symbol,m$pathway),unique);ex<-fread(paths['exact'])
+ck('MSigDB version and four exact memberships',all(m$db_version=='2026.1.Hs')&&all(vapply(focus,function(id)setequal(sets[[id]],ex[gs_name==id,gene_symbol]),logical(1))))
+universe<-setdiff(rownames(yy),exposure_genes);sizes<-vapply(sets,function(g)sum(universe%in%g),integer(1));fam<-data.table(pathway=names(sizes),collection=m[match(names(sizes),pathway),collection],available_genes=sizes)[available_genes>=15&available_genes<=500]
+ck('four fixed pathways measurable',all(focus%in%fam$pathway))
+wt(fam,'01_planned_gene_sets.csv');wt(fam[,.N,by=collection],'01_family_counts.csv');wt(elig,'01_model_eligibility.csv');wt(data.table(display_order=1:4,pathway=focus),'00_fixed_focus.csv')
+saveRDS(list(patients=dt,raw=raw,y=yy,keep=keep,nuisance_design=X0,sets=sets,membership=m),file.path(out,'resources/outcome_prepared.rds'))
+wt(rbindlist(checks),'01_preflight_checks.csv');capture.output(sessionInfo(),file=file.path(out,'logs/sessionInfo_prepare.txt'))
+cat('PREPARATION PASSED; genes',sum(keep),'gene sets',nrow(fam),'\n');print(elig);print(fam[,.N,by=collection])

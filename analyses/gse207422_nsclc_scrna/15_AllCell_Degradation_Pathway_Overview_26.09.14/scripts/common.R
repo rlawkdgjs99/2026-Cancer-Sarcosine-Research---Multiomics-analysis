@@ -1,0 +1,31 @@
+suppressPackageStartupMessages({library(data.table);library(Matrix);library(edgeR);library(limma);library(digest)})
+options(stringsAsFactors=FALSE,warn=1)
+arg<-sub("^--file=","",commandArgs(FALSE)[grepl("^--file=",commandArgs(FALSE))])
+out<-normalizePath(file.path(dirname(arg),".."),mustWork=TRUE);src<-normalizePath(file.path(out,".."),mustWork=TRUE)
+.libPaths(c(.libPaths(),file.path(src,"03_lee_fig3_style_FINAL/hallmark_GSEA_Q4_vs_Q1_26.08.26/R_libs")))
+suppressPackageStartupMessages(library(fgsea))
+for(d in c("logs","resources/models","results/tables","results/ranks","results/figures","results/qa"))dir.create(file.path(out,d),recursive=TRUE,showWarnings=FALSE)
+sha<-function(p)digest(file=p,algo="sha256",serialize=FALSE)
+wt<-function(d,f)fwrite(d,file.path(out,"results/tables",f),quote=TRUE,na="NA")
+z<-function(x){stopifnot(all(is.finite(x)),sd(x)>0);as.numeric(scale(x))}
+prior<-file.path(src,"07_Fig6_Fig7_Three_Collection_Link_26.09.07")
+member_path<-file.path(prior,"resources/MSigDB_2026.1.Hs_three_collections.rds")
+focus<-fread(file.path(prior,"results/tables/00_prespecified_focus.csv"))
+exposure_genes<-c("GNMT","DMGDH","SARDH","PIPOX")
+collections<-c("Hallmark","Reactome","GO:BP")
+covars<-function(d){cs<-c("treatment","histology");cs[vapply(cs,function(k)uniqueN(d[[k]])>1,logical(1))]}
+hc3<-function(y,X,j){
+ df<-nrow(X)-qr(X)$rank
+ blank<-function(st,b=NA_real_)data.table(status=st,beta=b,se=NA_real_,p=NA_real_,ci_low=NA_real_,ci_high=NA_real_)
+ if(any(!is.finite(y)))return(blank("NE_GENE_COVERAGE_OR_SCORE"))
+ if(sd(y)<1e-12)return(blank("NE_CONSTANT_SCORE"))
+ if(qr(X)$rank<ncol(X)||df<5)return(blank("NE_RANK_OR_DF"))
+ fit<-lm.fit(X,y);inv<-solve(crossprod(X));h<-rowSums((X%*%inv)*X);bt<-fit$coefficients[j]
+ if(any(1-h<1e-8))return(blank("NE_HC3_LEVERAGE_ONE",bt))
+ vv<-inv%*%crossprod(X,X*as.numeric((fit$residuals/(1-h))^2))%*%inv
+ se<-sqrt(vv[j,j])
+ data.table(status="TESTED",beta=bt,se=se,p=2*pt(-abs(bt/se),df),ci_low=bt-qt(.975,df)*se,ci_high=bt+qt(.975,df)*se)
+}
+
+old14<-file.path(src,"14_AllCell_Degradation_CD8_cDC1_26.09.08")
+focus[role=="Fig6 exact",role:="Fig7 exact"]
