@@ -7,11 +7,17 @@
 | TCGA NSCLC | LUAD + LUSC through UCSC Xena | primary tumors, one sample per patient | RNA-defined Degradation-High/Low within NSCLC |
 | NSCLC single-cell RNA-seq | GSE207422 | cells nested within patients; frozen lineage map | Production, degradation, and production/degradation functional-score analyses |
 | CRC fecal metabolomics | MTBLS10232 | fecal metabolomic profiles | CRC versus healthy controls |
-| ccRCC tissue metabolomics | Hakimi et al. supplementary data; GSE74734 | 138 matched tumor/normal pairs | Paired tumor-versus-normal sarcosine abundance |
+| ccRCC tissue metabolomics | Hakimi et al., Cancer Cell 2016 (doi:10.1016/j.ccell.2015.12.004), supplementary table S2; no repository accession | 138 matched tumor/normal pairs | Paired tumor-versus-normal sarcosine abundance |
 | CRC shotgun metagenomics | PRJEB6070, PRJEB10878, PRJEB27928, PRJNA429097 | cohort-specific stool metagenomes | Healthy versus CRC; microbial sarcosine functions |
-| NSCLC ICI shotgun metagenomics | PRJNA751792, PRJNA1023797, PRJEB22863, PRJEB26531 | project-specific stool metagenomes | ICI responder versus non-responder; microbial sarcosine functions |
-| NSCLC 16S | PRJEB26531 | 16S profiles | Healthy versus NSCLC |
+| NSCLC ICI shotgun metagenomics | PRJNA751792, PRJNA1023797, PRJEB22863 | project-specific stool metagenomes | ICI responder versus non-responder; microbial sarcosine functions |
+| NSCLC 16S | PRJEB26531 (the PRJEB26531 WGS cohort is not used in the manuscript analyses) | 16S profiles | Healthy versus NSCLC |
 | CRC matched 16S/metabolomics | PRJNA763023 + MTBLS10232 | matched genus abundance and fecal metabolite records | genus–sarcosine integration |
+
+## Not distributed and not in this repository
+
+- The NSCLC plasma sarcosine measurements (Figure 1b–d) come from a previously reported laboratory cohort and are not public.
+- The mouse and T-cell experiments (Figure 7, Supplementary Figures 27–28) were analyzed in GraphPad Prism; there is no analysis code for them.
+- The author-prepared workbooks `73Pre.xlsx` and `16Matched.xlsx` (TIGER-derived expression values, scores and clinical covariates of the 73 pretreatment patients and 16 matched pairs) are read by the Figure 5 scripts and are not distributed.
 
 ## Data boundaries
 
