@@ -1,6 +1,6 @@
 # Sarcosine–cancer multi-omics analyses
 
-This repository contains analysis code and selected machine-readable result tables for the public-cohort components of a study of sarcosine metabolism, tumor immunity, and cancer-associated microbiomes. The laboratory plasma measurements (Figure 1b–d) and the mouse and T-cell experiments (Figure 7) are not part of the code release (see [DATASETS.md](DATASETS.md)).
+This repository contains analysis code and selected machine-readable result tables for the public-cohort components of a study of sarcosine metabolism, tumor immunity, and cancer-associated microbiomes. The laboratory plasma measurements (Figure 1b–d) and the mouse and T-cell experiments (Figure 7) are not part of the code release (see [DATASETS.md](DATASETS.md)); several other panels were drawn in GraphPad Prism and have no script (see [FIGURE_MAP.md](FIGURE_MAP.md)).
 
 The repository is organized by **cohort and analysis**, not by manuscript panel number. This keeps the code stable when the manuscript layout changes. [FIGURE_MAP.md](FIGURE_MAP.md) lists which scripts feed which figures, and [LAYOUT.md](LAYOUT.md) describes the workspace layout that some scripts expect.
 
@@ -25,7 +25,7 @@ Prespecified RNA-only validation used TCGA NSCLC primary tumors (LUAD/LUSC), whe
 |---|---|---|
 | `analyses/melanoma_ccrcc_shared_immune_axis/` | TIGER melanoma + matched ccRCC bulk tumor | Exact-set intersection, leading-edge overlap, gene-disjoint route models, TF diagnostics, and final narrowing |
 | `analyses/tcga_nsclc_immune_axis_validation/` | TCGA LUAD/LUSC bulk tumor | Prespecified RNA-only validation of the shared immune axis |
-| `analyses/tiger_melanoma_immunotherapy_rnaseq/` | PRJEB23709 bulk RNA-seq | ICI response/survival analyses and upstream immune-pathway analyses |
+| `analyses/tiger_melanoma_immunotherapy_rnaseq/` | PRJEB23709 bulk RNA-seq | ICI response/survival analyses, the Balance-score immune readouts of Figure 5, and upstream immune-pathway analyses |
 | `analyses/ccrcc_matched_metabolome_rnaseq/` | matched tumor metabolome + RNA-seq | Sarcosine grouping, GSEA, deconvolution, TF inference, continuous/quartile sensitivities, and pathway narrowing |
 | `analyses/gse207422_nsclc_scrna/` | GSE207422 single-cell RNA-seq | Frozen lineage annotation, module-score maps, and patient-level pseudobulk GSEA of the four programs by degradation group (whole tumor, CD8⁺ T cells, conventional DCs, epithelial cells) |
 | `analyses/crc_fecal_metabolomics/` | MTBLS10232 | CRC-versus-control fecal metabolomics |

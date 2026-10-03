@@ -18,6 +18,7 @@
 - The NSCLC plasma sarcosine measurements (Figure 1b–d) come from a previously reported laboratory cohort and are not public.
 - The mouse and T-cell experiments (Figure 7, Supplementary Figures 27–28) were analyzed in GraphPad Prism; there is no analysis code for them.
 - The author-prepared workbooks `73Pre.xlsx` and `16Matched.xlsx` (TIGER-derived expression values, scores and clinical covariates of the 73 pretreatment patients and 16 matched pairs) are read by the Figure 5 scripts and are not distributed.
+- Panels marked "Prism only" in [FIGURE_MAP.md](FIGURE_MAP.md) were drawn in GraphPad Prism on a separate computer; no script exists for them.
 
 ## Data boundaries
 

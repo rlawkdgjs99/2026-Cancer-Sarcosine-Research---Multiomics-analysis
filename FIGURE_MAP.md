@@ -1,8 +1,8 @@
-# Figure map (draft for review)
+# Figure map
 
 Figure and panel numbers follow the current manuscript (Figures 1–7, Supplementary Figures 1–28). Several script names keep the earlier numbering used while the figures were being laid out (for example `Fig1h`, `Fig1j`, `SupFig3` in the CRC WGS scripts). The mapping below is therefore given at the level of figure groups, based on the analysis each script performs; confirm a specific panel against the script output before relying on a name.
 
-Everything below runs on public data unless stated. Data are not distributed (see `DATASETS.md`); several pipelines assume the original workspace layout (see `LAYOUT.md`).
+Everything below uses public data unless stated (the Figure 5 scripts read author-prepared workbooks derived from the public TIGER data). Data are not distributed (see `DATASETS.md`); several pipelines assume the original workspace layout (see `LAYOUT.md`). Panels marked "Prism only" were drawn in GraphPad Prism outside this repository; no script is included for them.
 
 ## Figure 1 and Supplementary Figures 1–5: sarcosine in human metabolomes and 16S microbiomes
 
@@ -14,7 +14,7 @@ Everything below runs on public data unless stated. Data are not distributed (se
 | 1h–j, Sup 1b | ccRCC tumor versus adjacent-normal sarcosine (Hakimi et al.) | `analyses/ccrcc_tumor_metabolomics/R_scripts/`: `01_sarcosine_tumor_vs_normal.R`, `101_ROC_stackedbar_26.07.27.R` |
 | 1k, Sup 2 | Matched CRC 16S (PRJNA763023) genus abundances and diversity | `analyses/crc_matched_16s_metabolomics/16S_데이터_분석/raw_download/pe_pipeline/`: `run_pe_pipeline.sh`, `02_dada2_pe.R`, `03_downstream_analysis.R` |
 | 1k, Sup 3 | NSCLC stool 16S (PRJEB26531) | `analyses/nsclc_16s_microbiome/analysis/` |
-| 1l, Sup 4–5 | Genus–sarcosine associations in the matched CRC subset | `…/pe_pipeline/`: `04_sarcosine_analysis.R`, `04b_sarcosine_analysis_eligens.R`, `05`–`08` (high/low comparisons), `09_genus_sarcosine_correlation_heatmap.R`. The scripts that build the Figure 1l / Supplementary Figure 5a effect table and the Supplementary Figure 4 mixture model are not included. |
+| 1l, Sup 4–5 | Genus–sarcosine associations in the matched CRC subset | `…/pe_pipeline/`: `04_sarcosine_analysis.R`, `04b_sarcosine_analysis_eligens.R`, `05`–`08` (high/low comparisons), `09_genus_sarcosine_correlation_heatmap.R`. The Figure 1l / Supplementary Figure 5a effect-size panels and the Supplementary Figure 4 mixture-model panels are Prism only. |
 
 ## Figures 2–3 and Supplementary Figures 6–14: CRC shotgun metagenomes (four cohorts)
 
@@ -54,21 +54,21 @@ Module: `analyses/tiger_melanoma_immunotherapy_rnaseq/`. The current Figure 5 us
 |---|---|---|
 | 5a | Host sarcosine production and degradation enzymes | schematic, no code |
 | 5b | Balance by response, exact Mann–Whitney | Balance values are in the patient table written by `results/Fig5_PRE73_Balance_CD8_CYT_Correlations_26.09.22/code/01_prepare.py`; the P value in the legend reproduces from this table with an exact test |
-| 5c | Overall four-gene expression versus Balance (data ellipses, centroids) | script not included |
+| 5c | Overall four-gene expression versus Balance (data ellipses, centroids) | Prism only |
 | 5d | Overall survival by median Balance | `results/Fig5_PRE73_Balance_HighLow_OS_26.09.22/code/`; hazard ratio and confidence interval: Prism log-rank estimate |
 | 5e, 5f | CD8 and CYT by Balance group and versus Balance | `results/Fig5_PRE73_Balance_HighLow_CD8_CYT_26.09.22/code/`, `results/Fig5_PRE73_Balance_CD8_CYT_Correlations_26.09.22/code/`; the P values and Spearman correlations in the text reproduce from the patient table |
-| 5g–5j | 16 matched pairs: Balance by time and response, centroid shifts, Balance versus CD8 and CYT | inputs (quanTIseq with IOBR, CYT): `results/Fig5_Matched16_PRE_EDT_Immune_Genes_26.09.22/code/`; repeated-measures ANOVA of 5g: Prism; confidence regions and paired Hotelling T² tests: script not included |
-| Sup 20 | Responders versus non-responders: four genes, scores, ratio | `analysis/01_data_prep.R`, `analysis/02_response_analysis.R` (the gene-level P values in the figure reproduce from their output table); scripts of the score-level panels (standardization across all biopsies): not included |
-| Sup 21 | Joint expression distributions (data ellipses, Hotelling regions) | script not included |
-| Sup 22 | Ten measures: response odds ratios, AUCs, Cox hazard ratios | script not included |
+| 5g–5j | 16 matched pairs: Balance by time and response, centroid shifts, Balance versus CD8 and CYT | inputs (quanTIseq with IOBR, CYT): `results/Fig5_Matched16_PRE_EDT_Immune_Genes_26.09.22/code/`; the panels, including the repeated-measures ANOVA of 5g, the centroid shifts, confidence regions and paired Hotelling T² tests, are Prism only |
+| Sup 20 | Responders versus non-responders: four genes, scores, ratio | `analysis/01_data_prep.R`, `analysis/02_response_analysis.R` (the gene-level P values in the figure reproduce from their output table); the score-level panels (standardization across all biopsies) are Prism only |
+| Sup 21 | Joint expression distributions (data ellipses, Hotelling regions) | Prism only |
+| Sup 22 | Ten measures: response odds ratios, AUCs, Cox hazard ratios | Prism only |
 | Sup 23 | CD8 and CYT by response; Spearman and High–Low heatmap for ten measures | `results/Fig5_PRE73_FourGenes_CD8_CYT_26.09.22/code/`, `results/Fig5_PRE73_Ratio_Coordinates_CD8_CYT_26.09.22/code/`, `results/Fig5_PRE73_Balance_CD8_CYT_Correlations_26.09.22/code/`; the Spearman values of 23c and the exact P values of 23a,b reproduce from the patient table |
-| Sup 24 | Paired CD8 and CYT changes; paired Hotelling tests | inputs: `results/Fig5_Matched16_PRE_EDT_Immune_Genes_26.09.22/code/`; repeated-measures ANOVA: Prism; Hotelling tests: script not included |
+| Sup 24 | Paired CD8 and CYT changes; paired Hotelling tests | inputs: `results/Fig5_Matched16_PRE_EDT_Immune_Genes_26.09.22/code/`; the panels, including the repeated-measures ANOVA and the paired Hotelling tests, are Prism only |
 
 ## Figure 6, Supplementary Figures 25–26: shared immune programs
 
 | Panels | Analysis | Where |
 |---|---|---|
-| 6a, 6b | Melanoma and ccRCC NES concordance; running-enrichment curves | `analyses/melanoma_ccrcc_shared_immune_axis/` (`01_compare_common_pathways.R`, `02_narrow_shared_immune_axis.R`). The renderer of panel 6a and the source of the panel 6b curves are not included. |
+| 6a, 6b | Melanoma and ccRCC NES concordance; running-enrichment curves | `analyses/melanoma_ccrcc_shared_immune_axis/` (`01_compare_common_pathways.R`, `02_narrow_shared_immune_axis.R`). The renderer of panel 6a is not included; the panel 6b curves are Prism only. |
 | 6c | NES and BH q across melanoma, ccRCC and TCGA NSCLC | `analyses/tcga_nsclc_immune_axis_validation/` |
 | 6d | Post-treatment GSE207422 lineage UMAP and degradation scores | `analyses/gse207422_nsclc_scrna/02_lineage_reannotation/` (frozen annotation), `03_lee_fig3_style_FINAL/` (UMAP renders), `14_AllCell_Degradation_CD8_cDC1_26.09.08/scripts/01_prepare.R` (patient exposure and groups) |
 | 6e | Whole-tumor pseudobulk, four exact programs | `15_AllCell_Degradation_Pathway_Overview_26.09.14/` |
@@ -79,4 +79,4 @@ Module: `analyses/tiger_melanoma_immunotherapy_rnaseq/`. The current Figure 5 us
 
 ## Figure 7 and Supplementary Figures 27–28: mouse and T-cell experiments
 
-GraphPad Prism analyses of the experimental data; there is no analysis code in this repository. The experimental data are reported in the manuscript figures and source files.
+Prism only: GraphPad Prism analyses of the experimental data; there is no analysis code in this repository. The experimental data are reported in the manuscript figures and source files.
