@@ -9,7 +9,7 @@ Everything below uses public data unless stated (the Figure 5 scripts read autho
 | Panels | Analysis | Module and scripts |
 |---|---|---|
 | 1a | Overview schematic | none |
-| 1b–d | NSCLC plasma sarcosine, early on-treatment change and ROC | **Not in this repository.** Laboratory-shared Biocrates measurements from the previously reported cohort (Lee et al., Drug Resist. Updat. 2024); the data are not public. |
+| 1b–d | NSCLC plasma sarcosine, early on-treatment change and ROC | **Not in this repository.** Laboratory-shared Biocrates measurements from the previously reported cohort (Lee et al., Drug Resist. Updat. 2024); the deidentified paired values are described in the Data availability statement of the manuscript. |
 | 1e–g, Sup 1a | CRC fecal sarcosine (MTBLS10232): levels, median split, ROC, anatomical-site check | `analyses/crc_fecal_metabolomics/R_scripts/`: `01`–`05` (download, parsing, merging), `13_consolidated_regeneration.R` (normalization and regeneration), `101_ROC_stackedbar_26.07.27.R` (ROC, stacked bars), `15_sarcosine_anatomical_site_consistency_26.08.23.R` |
 | 1h–j, Sup 1b | ccRCC tumor versus adjacent-normal sarcosine (Hakimi et al.) | `analyses/ccrcc_tumor_metabolomics/R_scripts/`: `01_sarcosine_tumor_vs_normal.R`, `101_ROC_stackedbar_26.07.27.R` |
 | 1k, Sup 2 | Matched CRC 16S (PRJNA763023) genus abundances and diversity | `analyses/crc_matched_16s_metabolomics/16S_데이터_분석/raw_download/pe_pipeline/`: `run_pe_pipeline.sh`, `02_dada2_pe.R`, `03_downstream_analysis.R` |
