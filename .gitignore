@@ -36,6 +36,31 @@ outputs/
 !analyses/tcga_nsclc_immune_axis_validation/results/
 !analyses/tcga_nsclc_immune_axis_validation/results/**
 
+# ---- Code kept in its original relative layout under folders that are otherwise ignored ----
+# Only scripts (*.R, *.py, *.sh) are tracked here; tables, figures and data inside these folders stay ignored.
+!analyses/crc_matched_16s_metabolomics/16S_데이터_분석/
+!analyses/crc_matched_16s_metabolomics/16S_데이터_분석/raw_download/
+analyses/crc_matched_16s_metabolomics/16S_데이터_분석/raw_download/*
+!analyses/crc_matched_16s_metabolomics/16S_데이터_분석/raw_download/pe_pipeline/
+analyses/crc_matched_16s_metabolomics/16S_데이터_분석/raw_download/pe_pipeline/*
+!analyses/crc_matched_16s_metabolomics/16S_데이터_분석/raw_download/pe_pipeline/*.R
+!analyses/crc_matched_16s_metabolomics/16S_데이터_분석/raw_download/pe_pipeline/*.sh
+!analyses/nsclc_wgs_microbiome/pooled_analysis/results/
+analyses/nsclc_wgs_microbiome/pooled_analysis/results/**
+!analyses/nsclc_wgs_microbiome/pooled_analysis/results/**/
+!analyses/nsclc_wgs_microbiome/pooled_analysis/results/**/*.R
+!analyses/nsclc_wgs_microbiome/pooled_analysis/results/**/*.py
+!analyses/gse207422_nsclc_scrna/*/results/
+analyses/gse207422_nsclc_scrna/*/results/**
+!analyses/gse207422_nsclc_scrna/*/results/**/
+!analyses/gse207422_nsclc_scrna/*/results/**/*.R
+!analyses/gse207422_nsclc_scrna/*/results/**/*.py
+!analyses/tiger_melanoma_immunotherapy_rnaseq/results/
+analyses/tiger_melanoma_immunotherapy_rnaseq/results/**
+!analyses/tiger_melanoma_immunotherapy_rnaseq/results/**/
+!analyses/tiger_melanoma_immunotherapy_rnaseq/results/**/*.R
+!analyses/tiger_melanoma_immunotherapy_rnaseq/results/**/*.py
+
 # ---- Tabular data dumps ----
 # Uncomment these if you do NOT want to track any intermediate tables:
 # *.tsv
