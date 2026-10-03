@@ -1,7 +1,7 @@
 # Consolidated regeneration: MaAsLin2 merge, replication fix, clean outputs, updated report
 # All steps reproducible from saved RDS files — no FTP, no .wiff
 #
-# 2026-04-29 fixes (Claude review):
+# 2026-04-29 fixes (review):
 #   FIX 1: QN axis corrected to features × samples (was: samples × features)
 #   FIX 2: age_cohort_bin added as MaAsLin2 + limma covariate (older/younger)
 #   FIX 3: original metabolite names restored from MaAsLin2 sanitized output
